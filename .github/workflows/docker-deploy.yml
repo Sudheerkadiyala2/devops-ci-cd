@@ -60,4 +60,5 @@ jobs:
           docker rm agency-website || true
 
           # Run new container
-          docker run -d -p 80:80 --name agency-website sudheerkadiyala/agency-website:latesty-website sudheerkadiyala/agency-website:latest
+          # Run new container
+docker run -d -p 80:80 --name agency-website --restart unless-stopped sudheerkadiyala/agency-website:latest
